@@ -1,7 +1,7 @@
 # File Extension #
 ## Just testing ig ##
 ```
-main.py
-main_2.py (recommended)
+main.py (recommended for smaller decrypt. files)
+main_2.py (recommended for speed)
 etc.
 ```
