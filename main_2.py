@@ -2,7 +2,6 @@ import os
 import secrets
 import base64
 import time
-import ctypes
 import platform
 from colorama import init, Fore, Style
 from cryptography.hazmat.backends import default_backend
@@ -36,10 +35,6 @@ def get_hwid():
     system_info = platform.uname()
     hwid = system_info.node + system_info.processor + system_info.machine
     return hwid
-
-def check_debugger():
-    kernel32 = ctypes.windll.kernel32
-    return kernel32.IsDebuggerPresent()
 
 def compress_data(input_file, output_file):
     with open(input_file, 'rb') as f_in:
@@ -146,11 +141,7 @@ def perform_decryption(input_folder, output_folder, key, hwid):
     for file_name in os.listdir(output_folder):
         decrypt_file(input_folder, output_folder, file_name, key)
 
-def main():
-    if check_debugger():
-        print(f"{ERROR_COLOR}Debugger detected. Exiting.{RESET_COLOR}")
-        return
-    
+def main():    
     print(f"{INFO_COLOR}Welcome to File Encryption/Decryption Utility!{RESET_COLOR}")
     choice = input(f"{INFO_COLOR}Enter 'E' to encrypt or 'D' to decrypt: {RESET_COLOR}").upper()
 
