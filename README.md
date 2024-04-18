@@ -24,11 +24,11 @@ This Python script provides functionality for encrypting and decrypting files us
 
 ### Encryption
 
-To encrypt files, run the script and choose 'E'. Follow the prompts to specify the input and output folders. The script will generate a secure passphrase and encryption key, encrypt each file in the input folder, and output the encrypted files to the specified output folder. The encryption key will be displayed upon completion.
+To encrypt files, run the script and choose 'E'. Follow the prompts to specify the input and output folders (or just default input/output folders in same directory). The script will generate a secure passphrase and encryption key, encrypt each file in the input folder and output the encrypted files to the specified output folder. The encryption key will be displayed upon completion.
 
 ### Decryption
 
-To decrypt files, run the script and choose 'D'. Provide the input and output folders as well as the encryption key when prompted. The script will decrypt each file in the input folder using the provided key and output the decrypted files to the specified output folder.
+To decrypt files, run the script and choose 'D'. Provide the input and output folders (put .jxint file in the output folder, it will decrypter the file into the input folder) as well as the encryption key when prompted. The script will decrypt each file in the input folder using the provided key and output the decrypted files to the specified output folder.
 
 ### Notes
 
