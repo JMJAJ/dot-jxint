@@ -32,9 +32,7 @@ To decrypt files, run the script and choose 'D'. Provide the input and output fo
 
 ### Notes
 
-- Ensure that the input folder contains files to be encrypted/decrypted.
 - Make sure to keep the encryption key secure as it is required for decryption.
-- Compression method can be specified in the code (Version 1) or modified as needed (Version 2).
 
 ## License
 
