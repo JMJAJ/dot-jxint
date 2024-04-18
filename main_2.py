@@ -106,7 +106,7 @@ def decrypt_file(input_folder, output_folder, file_name, key):
             chunk_de = f.read(1024 * 1024)  # Read 1 MB at a time
             if not chunk_de:
                 break
-            dencrypted_chunk = cipher.encrypt(chunk_de)
+            dencrypted_chunk = cipher.decrypt(chunk_de)
             decrypted_size += len(dencrypted_chunk)
 
     end_time = time.time()
