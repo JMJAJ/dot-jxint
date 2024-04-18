@@ -6,7 +6,7 @@ This Python script provides functionality for encrypting and decrypting files us
 
 - **Encryption:** Encrypt files using a passphrase and hardware ID.
 - **Decryption:** Decrypt previously encrypted files using the encryption key.
-- **Compression:** Supports multiple compression methods including Brotli, zlib, gzip, lzma, bz2, lz4, and snappy.
+- **Compression:** Compression test version supports multiple compression methods including Brotli, zlib, gzip, lzma, bz2, lz4, and snappy.
 - **Debugger Check:** Detects if a debugger is present and exits if detected. (Dont mind this lmao, I just saw it somewhere so I copypaste)
 
 ## Requirements
